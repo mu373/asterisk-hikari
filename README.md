@@ -21,6 +21,11 @@ Asterisk server on Docker that connects to Hikari Denwa via NTT East Home Gatewa
 docker compose up -d
 ```
 
+### Connect from SIP/IAX clients
+- [Acrobits softphone](https://acrobits.net/sip-client-ios-android/) (iOS/Android, SIP)
+- [Telephone](https://apps.apple.com/jp/app/telephone/id406825478) (macOS, SIP)
+- [Zoiper](https://www.zoiper.com/) (Windows/macOS/Linux/iOS/Android, SIP/IAX)
+
 ## Useful commands
 ```sh
 # Open bash inside container
@@ -35,7 +40,7 @@ asterisk -vvvrc
 
 ## Notes
 - Setting `network_mode: bridge` in `docker-compose.yml` could cause RTP/IAX connectivity issues where the phone audio is not transmitted properly
-- Confirmed that phone calls can be made on SIP clients connected with Tailscale
+- Confirmed that phone calls can be made on SIP clients connected with [Tailscale](https://tailscale.com/)
 
 ## Refrerences
 - [江戸の電話を長崎で取る - fetburner.core ](https://fetburner.hatenablog.com/entry/2024/03/10/192545)
