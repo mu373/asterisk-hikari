@@ -33,6 +33,10 @@ asterisk -vvvrc
 > pjsip show registrations
 ```
 
+## Notes
+- Setting `network_mode: bridge` in `docker-compose.yml` could cause RTP/IAX connectivity issues where the phone audio is not transmitted properly
+- Confirmed that phone calls can be made on SIP clients connected with Tailscale
+
 ## Refrerences
 - [江戸の電話を長崎で取る - fetburner.core ](https://fetburner.hatenablog.com/entry/2024/03/10/192545)
 - [ひかり電話HGW Pjsip - VoIP-Info.jp](https://www.voip-info.jp/index.php/%E3%81%B2%E3%81%8B%E3%82%8A%E9%9B%BB%E8%A9%B1HGW_Pjsip)
